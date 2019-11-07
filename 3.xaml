@@ -1,0 +1,198 @@
+﻿<Window x:Class="niko_vend._3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:niko_vend"
+        mc:Ignorable="d"
+        Title="Славік" MinHeight="600" MinWidth="800" Height="600" Width="800" WindowState="Normal" Background="LightGray" WindowStartupLocation="CenterScreen" Icon="./Resources/vend.ico">
+
+    <Grid x:Name="mainBack">
+        <Image Source="./Resources/coffeeBack.jpg" Grid.RowSpan="4" Grid.ColumnSpan="4" Stretch="UniformToFill" Opacity="0.3"></Image>
+        <!-- LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE -->
+        <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="17" FontFamily="Times New Roman" Foreground="Brown" FontWeight="Bold">Ціна інгрідієнтів за 1 кг/шт/л.:</Label>
+        <Label Grid.Row="1" Grid.Column="0" Content="Кава" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Left"
+                  Margin="0,10,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="0" FontSize="15" FontWeight="Bold" x:Name="coffeeGBox" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="100,15,0,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="0" Margin="97,-10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Height="25" FontSize="12" FontWeight="Bold" Content="Gimoka"></Label>
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="coffeeSBox" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="152,15,0,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="0" Margin="157,-10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" Height="25" FontSize="12" FontWeight="Bold" Content="Sati"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Margin="210,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[грн/кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Молоко" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Left"
+                  Margin="0,50,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="milkBox" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="100,55,0,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0" Margin="210,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[грн/кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Шоколад" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Left"
+                  Margin="0,90,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="chocBox" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="100,95,0,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0" Margin="210,90,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[грн/кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Чай" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Left"
+                  Margin="0,130,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="teaYBox" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="100,135,0,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="0" Margin="90,112,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Height="25" FontSize="12"
+                FontWeight="Bold" Content="Ліс.ягоди" ToolTip="Лісові ягоди"></Label>
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="teaMBox" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="152,135,0,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="0" Margin="148,112,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Height="25" FontSize="12"
+                FontWeight="Bold" Content="Малина"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Margin="210,130,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[грн/кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Цукор" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Left"
+                  Margin="0,170,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="sugarBox" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="100,175,0,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0" Margin="210,170,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[грн/кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Стаканчики" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Left"
+                  Margin="0,210,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="cupBox" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="100,215,0,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0" Margin="210,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" Width="70" >[грн/шт]</Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Палички" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Left"
+                  Margin="0,255,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="stickBoxW" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="100,260,0,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="0" Margin="97,235,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Height="25" FontSize="12" FontWeight="Bold" Content="Дерев." ToolTip="Дерев'яні палички"></Label>
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="stickBoxP" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="152,260,0,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="0" Margin="146,235,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="61" Height="25" FontSize="12" FontWeight="Bold" Content="Пластик." ToolTip="Пластикові палички"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Margin="210,255,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" Width="70" >[грн/шт]</Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Вода" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Left"
+                  Margin="0,295,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="wtrBox" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="100,300,0,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0" Margin="210,295,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[грн/л]</Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Ірландське&#x0a;віскі" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Left"
+                  Margin="0,335,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="irelandBox" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
+                     Margin="100,350,0,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0" Margin="210,345,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[грн/кг]</Label>
+
+        <Button Grid.Row="2" Grid.Column="0" x:Name="savePrices" Height="35" Width="45" Margin="125,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" ToolTip="Зберегти ціни" Click="SavePrices_Click">
+            <Image Source="./Resources/saveButton.ico"></Image>
+        </Button>
+
+        <!-- CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER-->
+        <Image Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Source="./Resources/rent.ico" Width="183" Height="97" ToolTip="Сума оренди"></Image>
+        <TextBox x:Name="rentBox" Grid.Row="1" Grid.Column="1" Text="0" Margin="0,90,0,0" VerticalAlignment="Top" Width="100" Height="20" TextAlignment="Center"></TextBox>
+
+        <Image Grid.Row="1" Grid.Column="1" Source="./Resources/uah.png" VerticalAlignment="Top" Height="97" Width="183" Margin="0,100,0,100" ToolTip="Сума знята з автомату"></Image>
+        <TextBox x:Name="firstCash" Grid.Row="1" Grid.Column="1" Text="0" Width="100" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top"
+                    Margin="0,180,0,0" TextAlignment="Center"/>
+
+        <Label Grid.Row="1" Grid.Column="1" FontFamily="Times New Roman" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,50">Чистий прибуток</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="result" FontSize="15" HorizontalAlignment="Center" Height="23" Margin="0,0,0,25" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" 
+                 TextAlignment="Center" FontWeight="Bold" Text="0" IsReadOnly="true"/>
+
+        <Button Grid.Row="2" Grid.Column="1" x:Name="go" Width="30" VerticalAlignment="top" HorizontalAlignment="Center" Height="30"  Margin="0,-10,0,0"
+                Click="Go_Click" ToolTip="Підрахувати чистий прибуток (Enter)" IsDefault="True">
+            <Image Source="./Resources/coffee_go.ico"></Image>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="addHistory" Width="30" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30"  Margin="0,-10,80,0" 
+                Click="AddHistory_Click" ToolTip="Додати в історію">
+            <Image Source="./Resources/history.ico"></Image>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="return1" Width="30" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30"  Margin="80,-10,0,0" Click="Return1_Click" 
+                ToolTip="Повернутися до головного вікна (Esc)" IsCancel="True">
+            <Image Source="./Resources/home.ico"></Image>
+        </Button>
+        <DatePicker Grid.Row="2" Grid.Column="1" x:Name="date"  Text="" HorizontalAlignment="Center" Margin="0,0,0,5" Width="200" VerticalAlignment="Bottom" Background="Gray" SelectedDateFormat="Short"/>
+        <!-- RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE-->
+        <Label Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" FontFamily="Times New Roman" FontSize="17" Foreground="Brown" FontWeight="Bold">Поповнення інгрідієнтів:</Label>
+        <Label Grid.Row="1" Grid.Column="2" Content="Кава" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Right"
+                  Margin="0,10,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="coffeeSBox2" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,15,100,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="2" Margin="0,-10,110,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="32" Height="25" FontSize="12" FontWeight="Bold" Content="Sati"></Label>
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="coffeeGBox2" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,15,152,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="2" Margin="0,-10,149,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="53" Height="25" FontSize="12" FontWeight="Bold" Content="Gimoka"></Label>
+        <Label Grid.Row="1" Grid.Column="2" Margin="0,10,210,0" HorizontalAlignment="Right" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Молоко" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Right"
+                  Margin="0,50,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="milkBox2" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,55,100,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="2" Margin="0,50,210,0" HorizontalAlignment="Right" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Шоколад" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Right"
+                  Margin="0,90,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="chocBox2" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,95,100,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="2" Margin="0,90,210,0" HorizontalAlignment="Right" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Чай" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Right"
+                  Margin="0,130,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="teaMBox2" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,135,100,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="2" Margin="0,112,85,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="65" Height="25" FontSize="12"
+                FontWeight="Bold" Content="Малина"></Label>
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="teaYBox2" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,135,152,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="2" Margin="0,112,144,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="65" Height="25" FontSize="12"
+                FontWeight="Bold" Content="Ліс.ягоди" ToolTip="Лісові ягоди"></Label>
+        <Label Grid.Row="1" Grid.Column="2" Margin="0,130,210,0" HorizontalAlignment="Right" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Цукор" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Right"
+                  Margin="0,170,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="sugarBox2" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,175,100,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="2" Margin="0,170,210,0" HorizontalAlignment="Right" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[кг]</Label>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Стаканчики" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Right"
+                  Margin="0,210,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="cupBox2" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,215,100,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="2" Margin="0,210,175,0" HorizontalAlignment="Right" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" Width="70" >[шт]</Label>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Палички" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Right"
+                  Margin="0,255,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="stickBox2P" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,260,100,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="2" Margin="0,235,93,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="61" Height="25" FontSize="12" FontWeight="Bold" Content="Пластик." ToolTip="Пластикові палички"></Label>
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="stickBox2W" FontSize="15" FontWeight="Bold" Text="0" Width="48" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,260,152,0" TextAlignment="Center"></TextBox>
+        <Label  Grid.Row="1" Grid.Column="2" Margin="0,235,149,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="53" Height="25" FontSize="12" FontWeight="Bold" Content="Дерев." ToolTip="Дерев'яні палички"></Label>
+        <Label Grid.Row="1" Grid.Column="2" Margin="0,255,175,0" HorizontalAlignment="Right" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" Width="70" >[шт]</Label>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Вода" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Right"
+                  Margin="0,295,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="wtrBox2" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,300,100,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="2" Margin="0,295,210,0" HorizontalAlignment="Right" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[л]</Label>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Ірландське&#x0a;віскі" FontFamily="Times New Roman" FontSize="17" HorizontalAlignment="Right"
+                  Margin="0,335,0,0" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="ireland2Box" FontSize="15" FontWeight="Bold" Text="0" Width="100" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Margin="0,350,100,0" TextAlignment="Center"></TextBox>
+        <Label Grid.Row="1" Grid.Column="2" Margin="0,345,210,0" HorizontalAlignment="Right" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="16" >[кг]</Label>
+
+
+
+
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.08*"/>
+            <RowDefinition/>
+            <RowDefinition  Height="0.2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.35*"/>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.35*"/>
+        </Grid.ColumnDefinitions>
+
+    </Grid>
+</Window>
